@@ -5,7 +5,7 @@ backgroundImage = document.createElement('img');
 backgroundImage.classList.add('background-image')
 backgroundImage.src = '../src/deli.jpg'
 
-content.appendChild(backgroundImage);
+// content.appendChild(backgroundImage);
 
 // Header
 header = document.createElement('div');
@@ -19,6 +19,7 @@ navLinks = ['Home', 'Menu', 'Contact'];
 for(let i = 0; i < navLinks.length; i++) {
     btn = document.createElement('button');
     btn.classList.add(`page-${i}`);
+    btn.textContent = navLinks[i];
     navBar.appendChild(btn);
 }
 
