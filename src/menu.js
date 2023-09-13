@@ -1,6 +1,3 @@
-// Imports
-import chef from './assets/chef.jpg'
-
 function menu() {
     let canvas = document.querySelector('#canvas');
     canvas.classList.remove('homepage');
