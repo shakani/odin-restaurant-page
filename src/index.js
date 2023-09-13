@@ -1,6 +1,6 @@
 // imports
-import homepage from './homepage';
 import './styles.css';
+import { homepage } from './homepage';
 
 
 let content = document.createElement('div');
