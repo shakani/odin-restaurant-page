@@ -19,6 +19,7 @@ function homepage() {
     // chefPic.src = '../src/chef.jpg';
     const chefPic = new Image();
     chefPic.src = chef;
+    chefPic.classList.add('chefPic');
 
     canvas.appendChild(motto);
     canvas.appendChild(catchphrase);

@@ -1,5 +1,6 @@
 // imports
 import './styles.css';
+import deli from './assets/deli.jpg';
 import { homepage } from './homepage';
 
 
@@ -8,9 +9,9 @@ content.id = "content";
 document.body.appendChild(content);
 
 // Background image
-let backgroundImage = document.createElement('img');
-backgroundImage.classList.add('background-image')
-backgroundImage.src = '../src/deli.jpg'
+let backgroundImage = new Image();
+backgroundImage.classList.add('background-image');
+backgroundImage.src = deli;
 
 content.appendChild(backgroundImage);
 
