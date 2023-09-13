@@ -57,4 +57,5 @@ footer.appendChild(githubLink);
 // copyright symbol needs unicode escape!
 
 content.appendChild(footer);
-homepage();
+// homepage();
+menu();
