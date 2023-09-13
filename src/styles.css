@@ -23,6 +23,7 @@ img.background-image {
 #content {
     display: flex;
     flex-direction: column;
+    gap: 10px;
     justify-content: space-between;
     height: 100vh;
 }
