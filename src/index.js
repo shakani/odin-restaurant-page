@@ -24,10 +24,12 @@ headerText.textContent = 'Fuhgettaboutit';
 
 let navBar = document.createElement('nav');
 let navLinks = ['Home', 'Menu', 'Contact'];
+let navFunctions = [homepage, homepage, homepage]; // methods to change pages
 for(let i = 0; i < navLinks.length; i++) {
     let btn = document.createElement('button');
     btn.classList.add(`page-${i}`);
     btn.textContent = navLinks[i];
+    btn.addEventListener('click', homepage);
     navBar.appendChild(btn);
 }
 
