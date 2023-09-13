@@ -56,7 +56,7 @@ function menu() {
         menuContent.textContent = menuContents[i];
 
         let menuImage = new Image();
-        menuImage.src = '../src/assets/menu-images/' + menuPaths[i];
+        menuImage.src = '../src/assets/' + menuPaths[i];
         menuImage.classList.add('card-image');
 
         card.appendChild(menuImage);
