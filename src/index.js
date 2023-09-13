@@ -26,3 +26,9 @@ for(let i = 0; i < navLinks.length; i++) {
 header.appendChild(headerText);
 header.appendChild(navBar);
 content.appendChild(header);
+
+// Canvas
+canvas = document.createElement('div');
+canvas.id = 'canvas';
+// canvas.textContent = 'Canvas';
+content.appendChild(canvas);
