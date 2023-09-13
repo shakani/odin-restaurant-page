@@ -114,3 +114,7 @@ img.background-image {
     justify-content: center;
     align-items: center;
 }
+
+#canvas.homepage > p {
+    font-size: large;
+}
