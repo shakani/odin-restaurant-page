@@ -156,3 +156,11 @@ img.background-image {
 #canvas.menu > .card > img {
     height: 100px;
 }
+
+/* Contact canvas formatting */
+#canvas.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3rem 3rem;
+}
