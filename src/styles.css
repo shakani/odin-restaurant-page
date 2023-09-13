@@ -1,5 +1,6 @@
 :root {
     --black-mask: rgba(0, 0, 0, 0.75);
+    --card-mask: rgba(0, 0, 0, 0.9);
 }
 
 body {
@@ -117,4 +118,16 @@ img.background-image {
 
 #canvas.homepage > p {
     font-size: large;
+}
+
+/* Menu canvas formatting */
+#canvas.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+#canvas.menu > .card {
+    background-color: var(--card-mask);
 }
