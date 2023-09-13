@@ -1,23 +1,30 @@
-content = document.querySelector('#content');
+// imports
+import homepage from './homepage';
+import './styles.css';
+
+
+let content = document.createElement('div');
+content.id = "content";
+document.body.appendChild(content);
 
 // Background image
-backgroundImage = document.createElement('img');
+let backgroundImage = document.createElement('img');
 backgroundImage.classList.add('background-image')
 backgroundImage.src = '../src/deli.jpg'
 
 content.appendChild(backgroundImage);
 
 // Header
-header = document.createElement('div');
+let header = document.createElement('div');
 header.classList.add('header');
 
-headerText = document.createElement('h1');
+let headerText = document.createElement('h1');
 headerText.textContent = 'Fuhgettaboutit';
 
-navBar = document.createElement('nav');
-navLinks = ['Home', 'Menu', 'Contact'];
+let navBar = document.createElement('nav');
+let navLinks = ['Home', 'Menu', 'Contact'];
 for(let i = 0; i < navLinks.length; i++) {
-    btn = document.createElement('button');
+    let btn = document.createElement('button');
     btn.classList.add(`page-${i}`);
     btn.textContent = navLinks[i];
     navBar.appendChild(btn);
@@ -28,17 +35,17 @@ header.appendChild(navBar);
 content.appendChild(header);
 
 // Canvas
-canvas = document.createElement('div');
+let canvas = document.createElement('div');
 canvas.id = 'canvas';
 canvas.textContent = 'Canvas';
 content.appendChild(canvas);
 
 // Footer
-footer = document.createElement('div');
+let footer = document.createElement('div');
 footer.classList.add('footer');
 footer.textContent = 'Copyright \xA9 2023 ';
 
-githubLink = document.createElement('a');
+let githubLink = document.createElement('a');
 githubLink.textContent = 'shakani';
 githubLink.href = 'https://github.com/shakani/';
 footer.appendChild(githubLink);
@@ -46,3 +53,4 @@ footer.appendChild(githubLink);
 // copyright symbol needs unicode escape!
 
 content.appendChild(footer);
+homepage();
