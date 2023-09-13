@@ -3,7 +3,6 @@ import chef from './assets/chef.jpg';
 
 // content = document.querySelector('#content');
 function homepage() {
-    console.log('running homepage');
     let canvas = document.querySelector('#canvas');
     canvas.textContent = '';
 
