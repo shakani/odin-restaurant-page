@@ -5,7 +5,7 @@ backgroundImage = document.createElement('img');
 backgroundImage.classList.add('background-image')
 backgroundImage.src = '../src/deli.jpg'
 
-// content.appendChild(backgroundImage);
+content.appendChild(backgroundImage);
 
 // Header
 header = document.createElement('div');
