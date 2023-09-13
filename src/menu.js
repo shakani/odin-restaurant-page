@@ -41,6 +41,11 @@ function menu() {
         menuContent.classList.add('card-content');
         menuContent.textContent = menuContents[i];
 
+        let menuImage = new Image();
+        menuImage.src = chef;
+        menuImage.classList.add('card-image');
+
+        card.appendChild(menuImage);
         card.appendChild(menuTitle);
         card.appendChild(menuContent);
 
