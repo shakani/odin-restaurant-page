@@ -29,6 +29,23 @@ function menu() {
         'Supawich': 'Turkey, feta cheese, greek mayo',
     };
 
+    let menuPaths = {
+        'Reuben': 'Reuben.jpeg',
+        'Classic': 'Classic.jpeg',
+        'Hot & Red': 'Hot.jpeg',
+        'Beastwich': 'Beastwich.jpeg',
+        'Westsider': 'Westsider.jpeg',
+        'Godmother': 'Godmother.jpeg',
+        'Italiano': 'Italiano.png',
+        'Melty': 'Melty.jpeg',
+        'Noo Yoiker': 'Noo-Yoiker.jpeg',
+        'Olympia': 'Olympia.jpeg',
+        'American': 'American.jpeg',
+        'Big Stack': 'Big-Stack.jpeg',
+        'Chicken Club': 'Chicken-Club.jpeg',
+        'Supawich': 'Supawich.jpeg',
+    }
+
     for(let i in menuContents) {
         let card = document.createElement('div');
         card.classList.add('card');
@@ -42,7 +59,7 @@ function menu() {
         menuContent.textContent = menuContents[i];
 
         let menuImage = new Image();
-        menuImage.src = chef;
+        menuImage.src = '../src/assets/menu-images/' + menuPaths[i];
         menuImage.classList.add('card-image');
 
         card.appendChild(menuImage);
