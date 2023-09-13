@@ -144,6 +144,15 @@ img.background-image {
     gap: 1rem;
 }
 
+#canvas.menu > .card > .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#canvas.menu > .card > .card-content {
+    font-style: italic;
+}
+
 #canvas.menu > .card > img {
     height: 100px;
 }
