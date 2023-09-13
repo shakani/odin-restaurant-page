@@ -1,4 +1,6 @@
 // content = document.querySelector('#content');
-export default function homepage() {
+function homepage() {
     console.log('running homepage');
 }
+
+export homepage;
