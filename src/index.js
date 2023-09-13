@@ -10,11 +10,11 @@ content.id = "content";
 document.body.appendChild(content);
 
 // Background image
-let backgroundImage = new Image();
-backgroundImage.classList.add('background-image');
-backgroundImage.src = deli;
+// let backgroundImage = new Image();
+// backgroundImage.classList.add('background-image');
+// backgroundImage.src = deli;
 
-content.appendChild(backgroundImage);
+// content.appendChild(backgroundImage);
 
 // Header
 let header = document.createElement('div');
