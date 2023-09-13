@@ -1,3 +1,19 @@
+// imports
+import American from './assets/American.jpeg'
+import Beastwich from './assets/Beastwich.jpeg'
+import BigStack from './assets/Big-Stack.jpeg'
+import ChickeClub from './assets/Chicken-Club.jpeg'
+import Classic from './assets/Classic.jpeg'
+import Godmother from './assets/Godmother.jpeg'
+import Hot from './assets/Hot.jpeg'
+import Italiano from './assets/Italiano.png'
+import Melty from './assets/Melty.jpeg'
+import NooYoiker from './assets/Noo-Yoiker.jpeg'
+import Olympia from './assets/Olympia.jpeg'
+import Reuben from './assets/Reuben.jpeg'
+import Supawich from './assets/Supawich.jpeg'
+import Westsider from './assets/Westsider.jpeg'
+
 function menu() {
     let canvas = document.querySelector('#canvas');
     canvas.classList.remove('homepage');
@@ -27,20 +43,20 @@ function menu() {
     };
 
     let menuPaths = {
-        'Reuben': 'Reuben.jpeg',
-        'Classic': 'Classic.jpeg',
-        'Hot & Red': 'Hot.jpeg',
-        'Beastwich': 'Beastwich.jpeg',
-        'Westsider': 'Westsider.jpeg',
-        'Godmother': 'Godmother.jpeg',
-        'Italiano': 'Italiano.png',
-        'Melty': 'Melty.jpeg',
-        'Noo Yoiker': 'Noo-Yoiker.jpeg',
-        'Olympia': 'Olympia.jpeg',
-        'American': 'American.jpeg',
-        'Big Stack': 'Big-Stack.jpeg',
-        'Chicken Club': 'Chicken-Club.jpeg',
-        'Supawich': 'Supawich.jpeg',
+        'Reuben': Reuben,
+        'Classic': Classic,
+        'Hot & Red': Hot,
+        'Beastwich': Beastwich,
+        'Westsider': Westsider,
+        'Godmother': Godmother,
+        'Italiano': Italiano,
+        'Melty': Melty,
+        'Noo Yoiker': NooYoiker,
+        'Olympia': Olympia,
+        'American': American,
+        'Big Stack': BigStack,
+        'Chicken Club': ChickeClub,
+        'Supawich': Supawich,
     }
 
     for(let i in menuContents) {
@@ -56,7 +72,8 @@ function menu() {
         menuContent.textContent = menuContents[i];
 
         let menuImage = new Image();
-        menuImage.src = '../src/assets/' + menuPaths[i];
+        // menuImage.src = '../src/assets/' + menuPaths[i];
+        menuImage.src = menuPaths[i];
         menuImage.classList.add('card-image');
 
         card.appendChild(menuImage);
