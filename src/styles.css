@@ -96,3 +96,8 @@ img.background-image {
 .footer > a {
     color: white;
 }
+
+/* Homepage canvas formatting */
+#canvas > .chefPic {
+    height: 1rem;
+}
