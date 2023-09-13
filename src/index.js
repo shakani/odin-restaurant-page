@@ -32,3 +32,12 @@ canvas = document.createElement('div');
 canvas.id = 'canvas';
 // canvas.textContent = 'Canvas';
 content.appendChild(canvas);
+
+// Footer
+footer = document.createElement('div');
+footer.classList.add('footer');
+
+footer.textContent = 'Copyright \xA9 2023 shakani';
+// copyright symbol needs unicode escape!
+
+content.appendChild(footer);
