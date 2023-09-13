@@ -126,13 +126,22 @@ img.background-image {
 /* Menu canvas formatting */
 #canvas.menu {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 15rem);
     grid-template-rows: auto;
-    gap: 10px;
+    gap: 5rem;
+    margin: 1rem 0;
+    padding: 2rem 8rem;
 }
 
 #canvas.menu > .card {
     background-color: var(--card-mask);
+    padding: 2rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 #canvas.menu > .card > img {
