@@ -3,6 +3,7 @@ import './styles.css';
 import deli from './assets/deli.jpg';
 import { homepage } from './homepage';
 import { menu } from './menu';
+import { contact } from './contact';
 
 
 let content = document.createElement('div');
@@ -25,7 +26,7 @@ headerText.textContent = 'Fuhgettaboutit';
 
 let navBar = document.createElement('nav');
 let navLinks = ['Home', 'Menu', 'Contact'];
-let navFunctions = [homepage, menu, homepage]; // methods to change pages
+let navFunctions = [homepage, menu, contact]; // methods to change pages
 for(let i = 0; i < navLinks.length; i++) {
     let btn = document.createElement('button');
     btn.classList.add(`page-${i}`);
@@ -57,5 +58,6 @@ footer.appendChild(githubLink);
 // copyright symbol needs unicode escape!
 
 content.appendChild(footer);
-homepage();
+// homepage();
 // menu();
+contact();
