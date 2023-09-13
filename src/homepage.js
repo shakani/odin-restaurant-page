@@ -6,7 +6,13 @@ function homepage() {
     let canvas = document.querySelector('#canvas');
     canvas.textContent = '';
 
-    canvas.classList.toggle('homepage');
+    canvas.classList.remove('menu');
+    canvas.classList.remove('contact');
+    canvas.classList.add('homepage');
+
+    while(canvas.firstChild) {
+        canvas.removeChild(canvas.firstChild);
+    }
 
     let motto = document.createElement('p');
     let catchphrase = document.createElement('p');

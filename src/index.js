@@ -2,6 +2,7 @@
 import './styles.css';
 import deli from './assets/deli.jpg';
 import { homepage } from './homepage';
+import { menu } from './menu';
 
 
 let content = document.createElement('div');
@@ -24,12 +25,12 @@ headerText.textContent = 'Fuhgettaboutit';
 
 let navBar = document.createElement('nav');
 let navLinks = ['Home', 'Menu', 'Contact'];
-let navFunctions = [homepage, homepage, homepage]; // methods to change pages
+let navFunctions = [homepage, menu, homepage]; // methods to change pages
 for(let i = 0; i < navLinks.length; i++) {
     let btn = document.createElement('button');
     btn.classList.add(`page-${i}`);
     btn.textContent = navLinks[i];
-    btn.addEventListener('click', homepage);
+    btn.addEventListener('click', navFunctions[i]);
     navBar.appendChild(btn);
 }
 
