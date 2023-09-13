@@ -1,3 +1,6 @@
+// import
+import chef from './assets/chef.jpg';
+
 // content = document.querySelector('#content');
 function homepage() {
     console.log('running homepage');
@@ -11,8 +14,15 @@ function homepage() {
     motto.textContent = 'Worst deli in your neighborhood';
     catchphrase.textContent = '"If you don\'t like it, then get out!" (est. 1921)';
 
+    // let chefPic = document.createElement('img');
+    // chefPic.classList.add('chefPic');
+    // chefPic.src = '../src/chef.jpg';
+    const chefPic = new Image();
+    chefPic.src = chef;
+
     canvas.appendChild(motto);
     canvas.appendChild(catchphrase);
+    canvas.appendChild(chefPic);
 }
 
 export {homepage};
