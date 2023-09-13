@@ -99,5 +99,18 @@ img.background-image {
 
 /* Homepage canvas formatting */
 #canvas > .chefPic {
-    height: 1rem;
+    /* height: 200px;
+    border-radius: 50%; */
+    object-fit: cover;
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+}
+
+#canvas.homepage {
+    padding: 3rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

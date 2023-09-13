@@ -10,8 +10,8 @@ function homepage() {
 
     let motto = document.createElement('p');
     let catchphrase = document.createElement('p');
-    motto.textContent = 'Worst deli in your neighborhood';
-    catchphrase.textContent = '"If you don\'t like it, then get out!" (est. 1921)';
+    motto.textContent = 'Best deli in your neighborhood';
+    catchphrase.textContent = '"If you think there\'s a better one, fuhgettaboutit!" (est. 1921)';
 
     // let chefPic = document.createElement('img');
     // chefPic.classList.add('chefPic');
