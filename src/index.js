@@ -30,14 +30,19 @@ content.appendChild(header);
 // Canvas
 canvas = document.createElement('div');
 canvas.id = 'canvas';
-// canvas.textContent = 'Canvas';
+canvas.textContent = 'Canvas';
 content.appendChild(canvas);
 
 // Footer
 footer = document.createElement('div');
 footer.classList.add('footer');
+footer.textContent = 'Copyright \xA9 2023 ';
 
-footer.textContent = 'Copyright \xA9 2023 shakani';
+githubLink = document.createElement('a');
+githubLink.textContent = 'shakani';
+githubLink.href = 'https://github.com/shakani/';
+footer.appendChild(githubLink);
+
 // copyright symbol needs unicode escape!
 
 content.appendChild(footer);
