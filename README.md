@@ -1,5 +1,5 @@
-# Fuhgettaboutit
-[Live link](https://shakani.github.io/odin-restaurant-page/)
+# Restaurant Page: Fuhgettaboutit
+[Live link](https://shakani.github.io/restaurant-page/)
 
 Fuhgettaboutit is a fictitious deli with an eclectic assortment of sandwiches on its menu. This website was inspired by [The Odin Project's Restaurant Page](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page) assignment. 
 
